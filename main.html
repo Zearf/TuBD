@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="button.css">
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+  <title>Happy Birthday</title>
+</head>
+<body>
+  <canvas id="my-canvas"></canvas>
+  <div class="card">
+    <img src="bd.jpg" alt="birthday" class="birthday">
+    <div class="text">
+      <h1>Tanjoubi Omedetou!</h1>
+      <p>Sinh nhật vui vẻ nha bà dà:)</p>
+      <p class="muted">Có thiệp ở dưới nè</p>
+      <button class="btn btn--stripe"><a href="index.html">Bấm vào đây ik</a></button>
+    </div>
+    <div class="space"></div>
+  </div>
+  <iframe allow="autoplay" id="audio" hidden ></iframe>
+  <audio hidden autoplay>
+    <source src="song.mp4" type="audio/mpeg">
+  </audio>
+</body>
+<script>
+  var confettiSettings = { target: 'my-canvas' };
+  var confetti = new ConfettiGenerator(confettiSettings);
+  confetti.render();
+</script>
+</html>
